@@ -1,0 +1,11 @@
+order_id,customer_id,extracted_at,order_status,order_total_amount
+101,cust_a,2025-01-01 10:00:00,placed,50.00
+101,cust_a,2025-01-01 11:00:00,paid,50.00
+101,cust_a,2025-01-02 09:00:00,shipped,
+102,cust_b,2025-01-03 08:00:00,paid,120.50
+102,cust_b,2025-01-03 08:05:00,cancelled,120.50
+103,cust_a,2025-01-04 12:00:00,paid,25.00
+104,cust_c,2025-01-05 14:00:00,placed,
+104,cust_c,2025-01-05 15:00:00,paid,40.00
+105,cust_b,2025-01-06 09:00:00,placed,10.00
+105,cust_b,2025-01-06 10:00:00,refunded,

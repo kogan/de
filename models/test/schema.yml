@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: test1
+    description: "Placeholder model; replace with real transformations."
+    columns:
+      - name: id
+        description: "Example column."

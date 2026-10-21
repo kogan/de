@@ -27,13 +27,14 @@ Your job is to implement this in **dbt** with optimisation and quality controls.
 
 ### `raw_line_items.csv`
 
-| Column       | Description                                             |
-| ------------ | ------------------------------------------------------- |
-| `order_id`   | Foreign key to order                                    |
-| `sku`        | Product sku                                             |
-| `qty`        | Integer quantity                                        |
-| `unit_price` | Unit price (decimal)                                    |
-| `line_no`    | Integer line sequence from source (not globally unique) |
+| Column         | Description                                                     |
+| -------------- | --------------------------------------------------------------- |
+| `order_id`     | Foreign key to order                                            |
+| `sku`          | Product sku                                                     |
+| `qty`          | Integer quantity                                                |
+| `unit_price`   | Unit price (decimal)                                            |
+| `line_no`      | Integer line sequence from source (not globally unique)         |
+| `extracted_at` | When this snapshot row was produced (ISO-like timestamp string) |
 
 ---
 

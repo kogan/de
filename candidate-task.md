@@ -1,7 +1,7 @@
 # Data engineering take-home — dbt (mid-level)
 
-**Time:** 60 minutes (40 minutes coding + 20 min questions)
-**Stack:** dbt (Cloud) against BigQuery
+**Time:** 60 minutes (40 minutes coding)
+**Stack (optional - you can choose your own):** dbt (Cloud) against BigQuery
 
 ---
 
@@ -40,7 +40,7 @@ Your job is to implement this in **dbt** with optimisation and quality controls.
 
 ## Requirements
 
-1. **From seeds**
+1. **From seeds (optional - only if you use dbt and prefer ingest data this way)**
    - `dbt seed` had already been run and data is available to use
 
 2. **(Optional) The intermetiates**
@@ -55,6 +55,10 @@ Your job is to implement this in **dbt** with optimisation and quality controls.
      - `header_amount` (from your deduped / filled header logic)
      - `lines_subtotal` = sum over lines of `qty * unit_price` for that order
      - total order value should match total order line value
+
+4. **Tests**
+
+- any tests you think are reasonable or mandatory
 
 ---
 

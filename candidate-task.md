@@ -7,7 +7,7 @@
 
 ## Context
 
-You join a small e-commerce team. An upstream system exports **append-only snapshots** of order headers and line items. The exports are **not** idempotent: the same logical order appears on many rows, and fields can be **partially null** on newer rows. Finance needs a **single current row per order** and a **reliable line-total** to reconcile against the header.
+You join a small e-commerce team. An upstream system exports **append-only snapshots** of order headers and line items. The exports are **not** idempotent: the same logical order appears on many rows, and fields can be **partially null** on newer rows. Finance needs a **single current row per order** and a **reliable line-total** to reconcile against the header (order).
 
 Your job is to implement this in **dbt** with optimisation and quality controls.
 
@@ -47,7 +47,7 @@ Your job is to implement this in **dbt** with optimisation and quality controls.
    - Implement **one row per `order_id`** reflecting:
      - the **latest** **status** \*.
      - **amount** = rule above (latest non-null amount carried backward per order).
-   - Implement **collapsed line items** at grain **`order_id`, `sku`** with **`qty` summed**.
+   - Implement **grouped line items** at grain **`order_id`, `sku`** with **`qty` summed**.
 
 3. **Marts**
    - Model **`fct_orders`** at grain **one row per `order_id`** with:
@@ -58,7 +58,7 @@ Your job is to implement this in **dbt** with optimisation and quality controls.
 
 4. **Tests**
 
-- any tests you think are reasonable or mandatory
+- any tests you think are mandatory or reasonable
 
 ---
 

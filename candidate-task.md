@@ -41,7 +41,7 @@ Your job is to implement this in **dbt** with optimisation and quality controls.
 ## Requirements
 
 1. **From seeds**
-   - `dbt seed` had already been run and data is available to use
+   - `dbt seed` - to populate raw_orders and raw_line_items tables
 
 2. **(Optional) The intermetiates**
    - Implement **one row per `order_id`** reflecting:

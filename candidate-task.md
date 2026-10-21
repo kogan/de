@@ -1,7 +1,7 @@
 # Data engineering take-home — dbt (mid-level)
 
 **Time:** 60 minutes (40 minutes coding)
-**Stack (optional - you can choose your own):** dbt (Cloud) against BigQuery
+**Stack:** dbt (Cloud) against BigQuery (or your local database)
 
 ---
 
@@ -40,7 +40,7 @@ Your job is to implement this in **dbt** with optimisation and quality controls.
 
 ## Requirements
 
-1. **From seeds (optional - only if you use dbt and prefer ingest data this way)**
+1. **From seeds**
    - `dbt seed` had already been run and data is available to use
 
 2. **(Optional) The intermetiates**
